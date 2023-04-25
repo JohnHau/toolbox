@@ -1,0 +1,5 @@
+gcm_aes128_en_de.exe:gcm_aes128_en_de.c
+	gcc -o $@ $^ -I. -L. -lmbedcrypto -lmbedx509 -lmbedtls
+
+.PHONY clean:
+	rm -rf gcm_aes128_en_de.exe
